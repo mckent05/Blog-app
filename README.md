@@ -1,24 +1,48 @@
-# Blog app with Rails
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a simple blog application that displays a list of all users and their posts. 
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby
+- Ruby on Rails (RoR)
 
-* System dependencies
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+- Copy this link `https://github.com/mckent05/Blog-app.git`.
+- open the command prompt or terminal.
+- Run the command `git clone https://github.com/mckent05/Blog-app.git`.
+- enter the repository folder in your command prompt or terminal type `cd catalog`.
+- run `bundle install` to install all dependencies
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+- Ruby
+- rspec
+- RoR
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 **Akinlade Temitope**
+
+- GitHub: [@githubhandle](https://github.com/mckent05)
+- Twitter: [@twitterhandle](https://twitter.com/mckent05)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/akinladetemitope)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+.
