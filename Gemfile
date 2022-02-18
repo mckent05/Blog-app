@@ -27,6 +27,10 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+gem 'rails-controller-testing'
+gem 'rspec', '~>3.0'
+gem 'rspec-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -41,6 +45,8 @@ gem 'tzinfo-data', '~> 1.2021', '>= 1.2021.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
+
+gem 'ffi', '~> 1.15', '>= 1.15.5'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -70,3 +76,16 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+# Run against this stable release
+# group :development, :test do
+#   gem 'rspec-rails', '~> 5.0.0'
+# end
+
+# Or, run against the main branch
+# # (requires main-branch versions of all related RSpec libraries)
+# group :development, :test do
+#   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+#     gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'main'
+#   end
+# end

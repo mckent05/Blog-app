@@ -18,6 +18,9 @@ To get a local copy up and running follow these simple example steps.
 - enter the repository folder in your command prompt or terminal type `cd catalog`.
 - run `bundle install` to install all dependencies
 
+## Tests
+- To run all test on this repository run the command `bundle exec rspec`
+
 ### Prerequisites
 
 - Ruby
@@ -25,7 +28,6 @@ To get a local copy up and running follow these simple example steps.
 - RoR
 
 ## Authors
-
 👤 **Akinlade Temitope**
 
 - GitHub: [@githubhandle](https://github.com/mckent05)
@@ -45,4 +47,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-.
