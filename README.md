@@ -28,7 +28,6 @@ To get a local copy up and running follow these simple example steps.
 - RoR
 
 ## Authors
-
 👤 **Akinlade Temitope**
 
 - GitHub: [@githubhandle](https://github.com/mckent05)
