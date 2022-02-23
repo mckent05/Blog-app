@@ -1,1 +1,16 @@
 <h1>All details about a specific post for a particular user id will be displayed here.</h1>
+<div class='post-comments-cont d-flex f-col a-center j-center'>
+    <div class='post-cont-details'>
+         <div class='header-comments-counter d-flex a-center j-center'>
+          <h1><%="#{@post.title} by #{@user.name}"%></h1>
+          <p class=' d-flex a-center j-center'><%= "Comments: #{@post.commentscounter}, Likes: #{@post.likescounter}"%></p>
+         </div>
+        <p><%=@post.text%></p>
+    </div>
+    <div class='comment-cont'>
+       <% @comments.each do |comment| %>
+         <p><%="#{comment.author.name}: #{comment.text}" %></p>
+       <%end%>
+    </div>
+</div>
+

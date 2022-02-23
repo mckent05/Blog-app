@@ -1,1 +1,38 @@
 <h1>All details for a particular user id will be displayed here</h1>
+
+<div class='user-details-cont d-flex a-center j-center'>
+    <div class='user d-flex a-center j-center f-col'>
+
+        <div class='user-details-img d-flex a-center'>
+            <%= image_tag('profilepic.png', width:'250px', height:'250px') %>
+            <div class='user-details d-flex a-center j-center'>
+              <h1><%= @user.name %></h1>
+              <h2> Number of Posts: <%= @user.postscounter %> </h2>
+            </div>
+        </div>
+        <p class='user-bio d-flex a-center j-center'> Bio is just my Bio </p>
+        <%= @user.recent3_posts.each do |post| %>
+            <div class='post-details d-flex f-col'>
+              <h1><%= post.title %></h1>
+              <p><%= post.text %></p>
+              <p class='comments-likes-cont d-flex'>
+                <span>Comments: <%= post.commentscounter %></span>,
+                 <span>Likes: <%= post.likescounter %></span>
+             </p>
+            </div>
+
+        <% end %>
+        <div class='all-posts-btn'>
+             <button>
+               <%= link_to  user_posts_path(:user_id => @user.id) do %>
+               See all Posts
+               <%end%>
+        
+             </button>
+        <div>
+       
+
+    
+    </div>
+
+</div>
