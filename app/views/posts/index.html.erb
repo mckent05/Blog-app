@@ -23,14 +23,17 @@
       <div class='comment-cont'>
         <% post.comment_5_recent.each do |comment| %>
         <p> <%="#{comment.author.name}: #{comment.text} " %></p>
-
         <%end%>
-      
-      </div>
-      
-        
+      </div>       
     </div>
+    
 
   <%end%>
+  <div>
+    <button>
+        <%=link_to "Add a Post", new_user_post_path(:user_id => @user.id) %>
+    </button>
+  </div>
+   
 
 </div>

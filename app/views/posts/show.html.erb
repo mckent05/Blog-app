@@ -12,5 +12,19 @@
          <p><%="#{comment.author.name}: #{comment.text}" %></p>
        <%end%>
     </div>
+    <%=form_with url: user_post_comments_url(@user.id, @post.id), scope: :data do |f| %>
+      <div>
+        <%= f.label :comment %>
+        <%= f.text_area :comment, :required=>true %>
+        <%= f.submit "Comment"%>
+      </div>
+    <% end %>
+    <%=form_with url: user_post_likes_url(@user.id, @post.id), scope: :data do |f| %>
+      <div>
+        <%= f.submit "Like"%>
+      </div>
+    <% end %>
+
+    
 </div>
 

@@ -1,0 +1,22 @@
+<h1>Create a new Post</h1>
+
+<%=form_with url: user_posts_path, scope: :data do |f| %>
+    <div>
+        <%= f.label :title, "title" %>
+        <%= f.text_field :title, :required=>true %>
+    </div>
+
+    <div>
+        <%= f.label :text, "text" %>
+        <%= f.text_area :text, :required=>true %>
+    </div>
+
+    <div>
+        <%=f.submit "Submit"%>
+    </div>
+        
+    <!-- form_for @object, html: { multipart: true }, do |f| -->
+    <!-- form_for @object, html: { class: "classname" }, do |f| -->
+
+<% end %>
+  
