@@ -1,1 +1,22 @@
 <h1>All users or user id will be displayed here</h1>
+ <div class='user-page-cont d-flex f-col a-center j-center'>
+    <% @user.each do |user| %>
+        
+            <div class='user d-flex a-center'>
+                <%= image_tag("profilepic.png", width:'200px', height:'200px') %>
+                <div class='user-link'>
+                <%= link_to user_path(user.id) do %>
+                  <div class='user-details d-flex'>
+                    <h1><%= user.name %> <h1>
+                    <p class='post-counter d-flex'>Number of Posts: <%= user.postscounter %> <p>
+                  </div>
+                <%end%>
+                </div>
+            </div>
+            
+            
+       
+    <% end %>
+      
+</div>
+
