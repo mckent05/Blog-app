@@ -87,7 +87,7 @@ form label {
   width: 20vw;
   padding: 5px;
   font-size: 20px;
-  border-radius: 4px
+  border-radius: 4px;
 }
 
 .title,
@@ -104,4 +104,3 @@ form label {
   border-radius: 4px;
   width: 35vw;
 }
-
