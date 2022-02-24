@@ -11,7 +11,7 @@
             </div>
         </div>
         <p class='user-bio d-flex a-center j-center'> Bio is just my Bio </p>
-        <%= @user.recent3_posts.each do |post| %>
+        <% @user.recent3_posts.each do |post| %>
             <div class='post-details d-flex f-col'>
               <h1><%= post.title %></h1>
               <p><%= post.text %></p>

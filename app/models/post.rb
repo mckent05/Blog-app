@@ -9,6 +9,7 @@ class Post < ApplicationRecord
   end
 
   def update_post_counter
+    author.postscounter = 0 if author.postscounter.nil?
     author.increment!(:postscounter)
   end
 end

@@ -1,17 +1,17 @@
-<h1>Create a new Post</h1>
+<h1 class='new-post-header d-flex a-center j-center'>Create a new Post</h1>
 
 <%=form_with url: user_posts_path, scope: :data do |f| %>
-    <div>
-        <%= f.label :title, "title" %>
-        <%= f.text_field :title, :required=>true %>
+    <div class='title d-flex a-center j-center'>
+        <%= f.label :title, "Title:" %>
+        <%= f.text_field :title, required: true %>
     </div>
 
-    <div>
-        <%= f.label :text, "text" %>
-        <%= f.text_area :text, :required=>true %>
+    <div class='text d-flex a-center j-center'>
+        <%= f.label :text, "Text:" %>
+        <%= f.text_area :text, required: true %>
     </div>
 
-    <div>
+    <div class='submit-post'>
         <%=f.submit "Submit"%>
     </div>
         
