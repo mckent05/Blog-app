@@ -1,4 +1,9 @@
 <h1>All details about a specific post for a particular user id will be displayed here.</h1>
+ <div class="flash d-flex a-center j-center">
+    <% flash.each do |name, msg| %>
+      <p class=<%= name %>><%= msg %> </p>
+    <% end -%>
+</div>
 <div class='post-comments-cont d-flex f-col a-center j-center'>
     <div class='post-cont-details'>
          <div class='header-comments-counter d-flex a-center j-center'>

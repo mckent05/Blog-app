@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
     respond_to do |format|
       format.html do
         if new_comment.save
-          flash[:success] = 'Comment succesful'
+          flash[:success] = 'Comment succesful!'
           redirect_to user_post_path(current_user.id, user_post.id)
         else
           render :new, alert: 'Error occured!'

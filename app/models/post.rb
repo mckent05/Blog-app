@@ -4,6 +4,10 @@ class Post < ApplicationRecord
 
   belongs_to :author, class_name: 'User', foreign_key: 'users_id'
 
+  validates :title, presence: true, length: { in: 1...250 }
+  validates :commentscounter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+  validates :likescounter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+
   def comment_5_recent
     comments.order('created_at desc').limit(5)
   end
