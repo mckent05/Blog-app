@@ -104,3 +104,13 @@ form label {
   border-radius: 4px;
   width: 35vw;
 }
+
+.flash {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.flash p {
+  position: relative;
+  left: 45%;
+}
