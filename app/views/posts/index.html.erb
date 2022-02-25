@@ -1,6 +1,6 @@
 <h1>All post for a particular user id will be displayed here</h1>
 
-<div class='post-cont'>
+<div class='post-cont d-flex f-col a-center j-center'>
    <div class='user details img d-flex a-center j-center'>
      <%= image_tag('profilepic.png', width:'250px', height:'250px') %>
      <div class='user-details d-flex a-center j-center'>
@@ -8,7 +8,7 @@
         <p> Number of Posts: <%= @user.postscounter %> </p>
      </div>
   </div>
-  <%= @posts.each do |post| %>
+  <% @posts.each do |post| %>
     <div class='post-comments-cont d-flex f-col a-center j-center'>
       <div class='post-cont-details'>
        <%=link_to user_post_path(@user.id, post.id) do %>
@@ -23,14 +23,13 @@
       <div class='comment-cont'>
         <% post.comment_5_recent.each do |comment| %>
         <p> <%="#{comment.author.name}: #{comment.text} " %></p>
-
         <%end%>
-      
-      </div>
-      
-        
+      </div>       
     </div>
-
   <%end%>
-
+  <div>
+    <button class='add-post-btn'>
+        <%=link_to "Add a Post", new_user_post_path(:user_id => @user.id) %>
+    </button>
+  </div>
 </div>

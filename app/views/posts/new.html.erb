@@ -1,0 +1,22 @@
+<h1 class='new-post-header d-flex a-center j-center'>Create a new Post</h1>
+
+<%=form_with url: user_posts_path, scope: :data do |f| %>
+    <div class='title d-flex a-center j-center'>
+        <%= f.label :title, "Title:" %>
+        <%= f.text_field :title, required: true %>
+    </div>
+
+    <div class='text d-flex a-center j-center'>
+        <%= f.label :text, "Text:" %>
+        <%= f.text_area :text, required: true %>
+    </div>
+
+    <div class='submit-post'>
+        <%=f.submit "Submit"%>
+    </div>
+        
+    <!-- form_for @object, html: { multipart: true }, do |f| -->
+    <!-- form_for @object, html: { class: "classname" }, do |f| -->
+
+<% end %>
+  

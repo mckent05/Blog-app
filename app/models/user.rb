@@ -4,6 +4,6 @@ class User < ApplicationRecord
   has_many :comments, class_name: 'Comment', foreign_key: 'users_id'
 
   def recent3_posts
-    Post.last(3)
+    posts.last(3)
   end
 end

@@ -8,11 +8,8 @@ class Post < ApplicationRecord
     comments.order('created_at desc').limit(5)
   end
 
-  after_save :update_post_counter
-
-  private
-
   def update_post_counter
-    User.increment!(:postscounter)
+    author.postscounter = 0 if author.postscounter.nil?
+    author.increment!(:postscounter)
   end
 end
