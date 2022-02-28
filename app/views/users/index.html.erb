@@ -1,4 +1,7 @@
 <h1>All users or user id will be displayed here</h1>
+<%if user_signed_in?%>
+ <%= button_to "Logout", destroy_user_session_path, :method => :delete %>
+   
  <div class='user-page-cont d-flex f-col a-center j-center'>
     <% @user.each do |user| %>
         
@@ -13,10 +16,23 @@
                 <%end%>
                 </div>
             </div>
-            
+      
             
        
     <% end %>
+
+     <%
+=begin%>
+ <%else%>
+     <h1 class="notlogged-header"> Welcome to BlogApp </h1>
+     <div class="notlooged-btn-container">
+     <%= link_to "Log in", new_user_session_path, class:"notlogged-btn signin" %>
+     <%= link_to "Create account", new_user_registration_path, class:"notlogged-btn create" %>
+      </div> 
+<%
+=end%>
+    <%end %>
+   
       
 </div>
 
