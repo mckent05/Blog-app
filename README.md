@@ -1,6 +1,6 @@
 # Blog App
 
-> This is a simple blog application that displays a list of all users and their posts. 
+> This is a simple blog application that displays a list of all users and their posts.
 
 ## Built With
 
@@ -39,6 +39,12 @@ Please run the following commands
 - GitHub: [@githubhandle](https://github.com/mckent05)
 - Twitter: [@twitterhandle](https://twitter.com/mckent05)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/akinladetemitope)
+
+👤 **SYEDA JUVERIA AFREEN**
+
+- GitHub: [@githubhandle](https://github.com/sja-thedude)
+- Twitter: [@twitterhandle](https://twitter.com/sja_thedude)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/sja-thedude)
 
 ## 🤝 Contributing
 

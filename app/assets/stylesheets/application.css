@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.nav {
+  justify-content: space-between;
+  width: 98vw;
+  height: 10vh;
+  background-color: blue;
+  box-shadow: 0 4px 3px grey;
+  top: 0;
+  left: 0;
+}
+
+.class-header {
+  width: 40%;
+}
+
+.link-cont {
+  width: 40%;
+  justify-content: flex-end;
+  column-gap: 15px;
+}
+
+.nav-links {
+  column-gap: 15px;
+}
+
+.link-cont button {
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.link-cont button:hover {
+  cursor: pointer;
+}

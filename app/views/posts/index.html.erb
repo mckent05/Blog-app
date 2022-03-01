@@ -1,5 +1,4 @@
 <h1>All post for a particular user id will be displayed here</h1>
-
 <div class='post-cont d-flex f-col a-center j-center'>
    <div class='user details img d-flex a-center j-center'>
      <%= image_tag('profilepic.png', width:'250px', height:'250px') %>
@@ -32,4 +31,6 @@
         <%=link_to "Add a Post", new_user_post_path(:user_id => @user.id) %>
     </button>
   </div>
+
+ 
 </div>
