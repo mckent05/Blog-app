@@ -1,0 +1,13 @@
+<%if user_signed_in? %>
+  <nav class ='nav d-flex a-center'>
+   <h1 class='class-header'>My Blog App</h1>
+   <div class='link-cont d-flex a-center'>
+     <div class='nav-links d-flex a-center j-center'>
+       <%= link_to "Home", root_path %>
+       <%= link_to "Add new Post", new_user_post_path(:user_id => current_user.id) %>
+     </div>
+     <%= button_to "Logout", destroy_user_session_path, :method => :delete %>
+   </div>
+  
+  </nav>
+<%end%>
