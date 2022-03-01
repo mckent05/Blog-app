@@ -3,6 +3,7 @@
    <h1 class='class-header'>My Blog App</h1>
    <div class='link-cont d-flex a-center'>
      <div class='nav-links d-flex a-center j-center'>
+       <h3><%= "Logged in: #{current_user.name} " %> </h3>
        <%= link_to "Home", root_path %>
        <%= link_to "Add new Post", new_user_post_path(:user_id => current_user.id) %>
      </div>
@@ -10,4 +11,8 @@
    </div>
   
   </nav>
+  <%else%>
+    <nav class ='nav d-flex a-center'>
+       <h1 class='class-header'>My Blog App</h1>
+    </nav>
 <%end%>
