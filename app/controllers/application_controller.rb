@@ -11,8 +11,4 @@ class ApplicationController < ActionController::Base
       u.permit(:name, :surname, :email, :password, :current_password)
     end
   end
-
-  # def current_user
-  #   User.first
-  # end
 end
