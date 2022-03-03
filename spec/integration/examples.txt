@@ -1,0 +1,33 @@
+example_id                       | status | run_time        |
+-------------------------------- | ------ | --------------- |
+./spec/login_page_spec.rb[1:1:1] | passed | 0.39665 seconds |
+./spec/login_page_spec.rb[1:1:2] | passed | 1.08 seconds    |
+./spec/login_page_spec.rb[1:1:3] | passed | 0.06781 seconds |
+./spec/login_page_spec.rb[1:1:4] | passed | 0.20447 seconds |
+./spec/post_index_spec.rb[1:1:1] | passed | 0.31837 seconds |
+./spec/post_index_spec.rb[1:1:2] | passed | 0.43424 seconds |
+./spec/post_index_spec.rb[1:1:3] | passed | 0.43609 seconds |
+./spec/post_index_spec.rb[1:1:4] | passed | 1.24 seconds    |
+./spec/post_index_spec.rb[1:1:5] | passed | 0.32753 seconds |
+./spec/post_index_spec.rb[1:1:6] | passed | 1.33 seconds    |
+./spec/post_index_spec.rb[1:1:7] | passed | 1.62 seconds    |
+./spec/post_index_spec.rb[1:1:8] | passed | 1.74 seconds    |
+./spec/post_index_spec.rb[1:1:9] | passed | 0.45268 seconds |
+./spec/post_show_spec.rb[1:1:1]  | passed | 1.96 seconds    |
+./spec/post_show_spec.rb[1:1:2]  | passed | 1.37 seconds    |
+./spec/post_show_spec.rb[1:1:3]  | passed | 1.73 seconds    |
+./spec/post_show_spec.rb[1:1:4]  | passed | 0.33863 seconds |
+./spec/post_show_spec.rb[1:1:5]  | passed | 1.72 seconds    |
+./spec/post_show_spec.rb[1:1:6]  | passed | 0.84114 seconds |
+./spec/post_show_spec.rb[1:1:7]  | passed | 0.3655 seconds  |
+./spec/user_index_spec.rb[1:1:1] | passed | 0.51648 seconds |
+./spec/user_index_spec.rb[1:1:2] | passed | 0.1097 seconds  |
+./spec/user_index_spec.rb[1:1:3] | passed | 0.1115 seconds  |
+./spec/user_index_spec.rb[1:1:4] | passed | 0.12978 seconds |
+./spec/user_show_spec.rb[1:1:1]  | passed | 0.11797 seconds |
+./spec/user_show_spec.rb[1:1:2]  | passed | 0.51685 seconds |
+./spec/user_show_spec.rb[1:1:3]  | passed | 0.14086 seconds |
+./spec/user_show_spec.rb[1:1:4]  | passed | 0.1547 seconds  |
+./spec/user_show_spec.rb[1:1:5]  | passed | 0.16127 seconds |
+./spec/user_show_spec.rb[1:1:6]  | passed | 0.20605 seconds |
+./spec/user_show_spec.rb[1:1:7]  | passed | 0.34753 seconds |
